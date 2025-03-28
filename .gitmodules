@@ -50,5 +50,5 @@
 	path = libraries/SdFat
 	url = https://github.com/greiman/SdFat.git
 [submodule "tools/libpico/pico-extras"]
-	path = tools/libpico/pico-extras
+	path = pico-extras
 	url = https://github.com/raspberrypi/pico-extras
