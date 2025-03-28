@@ -4,6 +4,7 @@ set -e # Exit on error
 set -x
 
 export PICO_SDK_PATH="$(cd ../../pico-sdk/; pwd)"
+export PICO_EXTRAS_PATH="$(cd pico-extras/; pwd)"
 export PATH="$(cd ../../system/arm-none-eabi/bin; pwd):$PATH"
 export PATH="$(cd ../../system/riscv32-unknown-elf/bin; pwd):$PATH"
 export PATH="$(cd ../../system/picotool; pwd):$PATH"

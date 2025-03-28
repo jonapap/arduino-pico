@@ -20,6 +20,7 @@ else()
 endif()
 
 include(pico_sdk_import.cmake)
+include(pico_extras_import.cmake)
 
 project(pico_lib C CXX ASM)
 set(CMAKE_C_STANDARD 11)
@@ -150,6 +151,7 @@ target_compile_definitions(pico-${cpu} PUBLIC
 target_link_libraries(pico-${cpu}
     common-${cpu}
     boot_stage2
+    hardware_sleep
     hardware_adc
     hardware_base
     hardware_claim
